@@ -3,7 +3,7 @@
 }
 
 .toolbar {
-  background-color: #290c57;
+  background-color: #016A6A;
   padding: 0.8rem 1rem;
 
   button {
@@ -11,7 +11,8 @@
     transition: 0.2s background-color ease-in;
 
     &:hover {
-      background-color: #4b196c;
+      background-color: #b3d6d6;
+      color: #0c1f1f;
     }
   }
 }
