@@ -1,0 +1,19 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.toolbar {
+  background-color: #290c57;
+  padding: 0.8rem 1rem;
+
+  button {
+    color: #fff;
+    transition: 0.2s background-color ease-in;
+
+    &:hover {
+      background-color: #4b196c;
+    }
+  }
+}
+
+
