@@ -1,9 +1,7 @@
 <div class="grid">
-  <app-product-card/>
-  <app-product-card/>
-  <app-product-card/>
-  <app-product-card/>
-  <app-product-card/>
-  <app-product-card/>
-  <app-product-card/>
+  @for (produto of products(); track produto.id) {
+    <app-product-card [produto]="produto" />
+  } @empty {
+    <li>There are no items.</li>
+  }
 </div>

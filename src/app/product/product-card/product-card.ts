@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import {MatCardModule} from '@angular/material/card';
-import {MatButtonModule} from '@angular/material/button';
+import { Component, input } from '@angular/core';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 import { MatChipsModule } from '@angular/material/chips';
 
 @Component({
@@ -9,4 +9,6 @@ import { MatChipsModule } from '@angular/material/chips';
   templateUrl: './product-card.html',
   styleUrl: './product-card.scss',
 })
-export class ProductCard {}
+export class ProductCard {
+  produto = input.required<any>();
+}
