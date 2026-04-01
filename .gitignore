@@ -46,3 +46,5 @@ Thumbs.db
 .vscode/
 .github/
 todo.md
+
+.angular/

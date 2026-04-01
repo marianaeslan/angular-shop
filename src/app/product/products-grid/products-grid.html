@@ -2,6 +2,6 @@
   @for (produto of products(); track produto.id) {
     <app-product-card [produto]="produto" />
   } @empty {
-    <li>There are no items.</li>
+    <p>There are no items.</p>
   }
 </div>
