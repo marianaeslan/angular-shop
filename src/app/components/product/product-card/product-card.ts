@@ -3,7 +3,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatChipsModule } from '@angular/material/chips';
 import { CurrencyPipe } from '@angular/common';
-import { Cart } from '../../services/cart/cart';
+import { Cart } from '../../../services/cart/cart';
 
 @Component({
   selector: 'app-product-card',
