@@ -1,12 +1,19 @@
 <mat-toolbar class="toolbar">
-  <button matButton>
+  <button mat-button routerLink="/">
     <mat-icon>store</mat-icon>
     <span>Angular Shop</span>
   </button>
   <span class="spacer"></span>
-  <button matButton>Produtos</button>
-  <button matButton>
+  <button mat-button routerLink="/">Produtos</button>
+  <button
+    mat-button
+    routerLink="/cartpage"
+    [matBadge]="cart.cartItems().length"
+    [matBadgeHidden]="cart.cartItems().length === 0"
+    matBadgeColor="warn"
+  >
     <mat-icon>shopping_cart</mat-icon>
+
     <span>Carrinho</span>
   </button>
 </mat-toolbar>

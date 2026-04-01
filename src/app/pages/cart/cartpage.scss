@@ -1,0 +1,22 @@
+.total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: right;
+  color: #016a6a;
+}
+
+.empty-cart {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 100px auto;
+}
+
+.cart-order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}

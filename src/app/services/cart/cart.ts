@@ -1,14 +1,13 @@
 import { Product } from './../product/product';
-import { Injectable, signal, WritableSignal } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 
 @Injectable({
   providedIn: 'root',
 })
 export class Cart {
-  private items: WritableSignal<any[]> = signal([]);
+  cartItems = signal<any[]>([]);
 
-  addToCart(product: Product) {
-    this.items.asReadonly();
-    this.items.update((currentItems) => [...currentItems, product]);
+  addToCart(product: any) {
+    this.cartItems.update((items) => [...items, product]);
   }
 }
