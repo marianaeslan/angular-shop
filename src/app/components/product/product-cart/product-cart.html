@@ -6,6 +6,11 @@
     {{ produto().DESCRICAO }}
   </mat-card-content>
   <mat-card-footer class="zero-padding">
-    <p class="price p-left">{{ produto().PRECO | currency: 'BRL' }}</p>
+    <div class="card-bottom">
+      <p class="price p-left">{{ produto().PRECO | currency: 'BRL' }}</p>
+      <button mat-icon-button (click)="removerItem()">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
   </mat-card-footer>
 </mat-card>

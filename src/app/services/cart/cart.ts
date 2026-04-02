@@ -24,6 +24,14 @@ export class Cart {
     this.items.update((currentItems) => [...currentItems, product]);
   }
 
+  removeFromCart(index: number) {
+    this.items.update((currentItems) => {
+      const newItems = [...currentItems];
+      newItems.splice(index, 1);
+      return newItems;
+    });
+  }
+
   async finalizarCompra() {
     try {
       const pedidosRef = collection(this.firestore, 'pedidos');

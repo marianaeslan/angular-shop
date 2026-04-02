@@ -2,12 +2,14 @@
   <button mat-button routerLink="/">
     <span>Angular Shop</span>
   </button>
+
   <span class="spacer"></span>
+
   <button mat-button routerLink="/">
     <mat-icon>store</mat-icon>
-
     <span>Produtos</span>
   </button>
+
   <button
     mat-button
     routerLink="/cartpage"
@@ -16,11 +18,23 @@
     matBadgeColor="warn"
   >
     <mat-icon>shopping_cart</mat-icon>
-
     <span>Carrinho</span>
   </button>
-  <button mat-button routerLink="/login" (click)="authService.loginComGoogle()">
-    <mat-icon>contacts_product</mat-icon>
-    <span>Login</span>
-  </button>
+
+  @if (authService.currentUser()) {
+    <button mat-button routerLink="/meus-cursos">
+      <mat-icon>school</mat-icon>
+      <span>Meus Cursos</span>
+    </button>
+
+    <button mat-button color="warn" (click)="authService.logout()">
+      <mat-icon>logout</mat-icon>
+      <span>Sair</span>
+    </button>
+  } @else {
+    <button mat-button (click)="authService.loginComGoogle()">
+      <mat-icon>contacts_product</mat-icon>
+      <span>Login</span>
+    </button>
+  }
 </mat-toolbar>
