@@ -9,7 +9,7 @@
 
 @if (cartItems().length > 0) {
   <div class="cart-order">
-    <button mat-flat-button color="primary">Finalizar compra</button>
+    <button mat-flat-button color="primary" (click)="efetuarPagamento()">Finalizar compra</button>
     <p class="total">Valor total: {{ valorTotal() | currency: 'BRL' }}</p>
   </div>
 }

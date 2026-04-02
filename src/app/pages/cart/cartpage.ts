@@ -14,6 +14,9 @@ import { RouterLink } from '@angular/router';
 export class CartPage {
   cartService = inject(Cart);
   cartItems = this.cartService.cartItems;
+  efetuarPagamento() {
+    this.cartService.finalizarCompra();
+  }
 
   valorTotal = computed(() => {
     return this.cartItems().reduce((total, item) => total + item.PRECO, 0);
