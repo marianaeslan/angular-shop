@@ -17,12 +17,6 @@ html {
       density: 0,
     )
   );
-  @include mat.snack-bar-overrides(
-    (
-      button-color: rgb(255, 255, 255),
-      container-color: rgb(25, 152, 0),
-    )
-  );
 }
 
 body {
@@ -43,3 +37,23 @@ body {
   height: 100%;
 }
 /* You can add global styles to this file, and also import other style files */
+
+.snackbar-erro .mdc-snackbar__surface {
+  background-color: #d32f2f !important;
+}
+.snackbar-erro .mdc-snackbar__label {
+  color: #ffffff !important;
+}
+.snackbar-erro .mat-mdc-snack-bar-action {
+  color: #ffffff !important;
+}
+
+.snackbar-success .mdc-snackbar__surface {
+  background-color: #4caf50 !important;
+}
+.snackbar-success .mdc-snackbar__label {
+  color: #ffffff !important;
+}
+.snackbar-success .mat-mdc-snack-bar-action {
+  color: #ffffff !important;
+}

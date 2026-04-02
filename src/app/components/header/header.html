@@ -1,10 +1,13 @@
 <mat-toolbar class="toolbar">
   <button mat-button routerLink="/">
-    <mat-icon>store</mat-icon>
     <span>Angular Shop</span>
   </button>
   <span class="spacer"></span>
-  <button mat-button routerLink="/">Produtos</button>
+  <button mat-button routerLink="/">
+    <mat-icon>store</mat-icon>
+
+    <span>Produtos</span>
+  </button>
   <button
     mat-button
     routerLink="/cartpage"
@@ -15,5 +18,9 @@
     <mat-icon>shopping_cart</mat-icon>
 
     <span>Carrinho</span>
+  </button>
+  <button mat-button routerLink="/login" (click)="authService.loginComGoogle()">
+    <mat-icon>contacts_product</mat-icon>
+    <span>Login</span>
   </button>
 </mat-toolbar>

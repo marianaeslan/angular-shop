@@ -18,8 +18,6 @@ export class ProductCard {
 
   addToCart() {
     this.cart.addToCart(this.produto());
-    // remover depois, testando
-    console.log(this.cart);
   }
   router = inject(Router);
 

@@ -5,6 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatBadge } from '@angular/material/badge';
 import { Router, RouterLink } from '@angular/router';
 import { Cart } from '../../services/cart/cart';
+import { AuthService } from '../../services/auth/auth';
 
 @Component({
   selector: 'app-header',
@@ -14,6 +15,6 @@ import { Cart } from '../../services/cart/cart';
 })
 export class Header {
   router = inject(Router);
-
+  authService = inject(AuthService);
   cart = inject(Cart);
 }
