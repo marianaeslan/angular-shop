@@ -8,8 +8,11 @@ Este projeto utiliza componentes standalone, signals para gerenciamento de estad
 ## Funcionalidades
 
 - **Visualização de Produtos**: Navegue por uma grade de produtos com informações detalhadas.
-- **Carrinho de Compras**: Adicione produtos ao carrinho e visualize os itens selecionados em uma página dedicada.
-- **Navegação Intuitiva**: Alterne facilmente entre a lista de produtos e o carrinho de compras.
+- **Carrinho de Compras**: Adicione e remova produtos do carrinho e visualize os itens selecionados em uma página dedicada.
+- **Autenticação de Usuários**: Sistema de login e registro de usuários integrado com o Firebase Authentication.
+- **Finalização de Compra**: Salve os pedidos no Firestore, vinculando-os ao usuário autenticado.
+- **Página "Meus Pedidos"**: Visualize o histórico de compras realizadas.
+- **Navegação Intuitiva**: Alterne facilmente entre a lista de produtos, o carrinho e a página de pedidos.
 - **Estado Reativo**: O estado do carrinho é gerenciado com Angular Signals, garantindo que a interface seja atualizada em tempo real.
 
 ## Tecnologias Utilizadas
@@ -17,6 +20,7 @@ Este projeto utiliza componentes standalone, signals para gerenciamento de estad
 - **[Angular](https://angular.dev/)**: Framework principal para a construção da aplicação.
 - **[TypeScript](https://www.typescriptlang.org/)**: Superset do JavaScript que adiciona tipagem estática.
 - **[Angular Material](https://material.angular.io/)**: Biblioteca de componentes de UI para criar uma experiência de usuário consistente e moderna.
+- **[Firebase](https://firebase.google.com/)**: Plataforma utilizada para autenticação de usuários e como banco de dados (Firestore).
 - **Angular Signals**: Para gerenciamento de estado reativo e granular.
 - **Componentes Standalone**: Arquitetura de componentes desacoplada e modular.
 - **SCSS**: Pré-processador CSS para estilos mais organizados e poderosos.
