@@ -15,5 +15,5 @@ export const authGuard: CanActivateFn = (route, state) => {
     duration: 5000,
     panelClass: ['snackbar-erro'],
   });
-  return router.createUrlTree(['/']);
+  return router.navigate(['/']);
 };

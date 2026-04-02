@@ -1,3 +1,10 @@
 <main>
   <h1>Meus cursos</h1>
+  <div class="grid-de-cursos">
+    @for (item of cursos(); track item.ID) {
+      <app-curso-card [curso]="item"></app-curso-card>
+    } @empty {
+      <p>Você ainda não possui cursos.</p>
+    }
+  </div>
 </main>
