@@ -1,5 +1,5 @@
 @for (item of cartItems(); track $index) {
-  <app-product-cart [produto]="item" />
+  <app-product-cart [produto]="item" [itemIndex]="$index" />
 } @empty {
   <div class="empty-cart">
     <p>Seu carrinho está vazio</p>
