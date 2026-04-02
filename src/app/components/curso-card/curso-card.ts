@@ -1,6 +1,5 @@
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { Component, input } from '@angular/core';
-
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 
