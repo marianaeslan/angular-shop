@@ -33,7 +33,10 @@ export class Cart {
       });
 
       this.items.set([]);
-      this.snackBar.open('Pedido finalizado com sucesso!', 'Fechar', { duration: 6000 });
+      this.snackBar.open('Pedido finalizado com sucesso!', 'Fechar', {
+        duration: 6000,
+        panelClass: ['snackbar-success'],
+      });
       this.router.navigate(['/']);
       console.log('Pedido salvo no Firebase com sucesso!');
     } catch (error) {
